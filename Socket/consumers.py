@@ -10,7 +10,7 @@ class MyConsumer(WebsocketConsumer):
         it run when we connect
         """
         self.accept()
-        self.send(text_data=json.dumps({"status": "connected woow" }))
+        self.send(text_data=json.dumps({"status": "connected woow" } ))
         
 
     def receive(self, text_data=None):
